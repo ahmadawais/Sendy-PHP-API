@@ -60,3 +60,6 @@ $result_array = $sendy->campaign( array(
 
 // Method #7:Change the `list_id` you are referring to at any point.
 $sendy->set_list_id( "XXXXXXX" );
+
+// Method #8:Get the `list_id` you are referring to at any point.
+$sendy->get_list_id( "XXXXXXX" );
