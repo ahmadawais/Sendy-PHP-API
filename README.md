@@ -1,7 +1,7 @@
 # Sendy PHP API Wrapper
 🚀 Sendy PHP API Wrapper: Complete API interfacing.
 
-## API Wrapper For
+## API Wrapper For Sendy API
 With this Sendy PHP API Wrapper you can do the following:
 
 **SUBSCRIBERS**
