@@ -1,0 +1,17 @@
+{
+    "name": "ahmadawais/sendy-php-api",
+    "description": "Sendy PHP API Wrapper: Complete API interfacing.",
+    "type": "library",
+    "keywords": ["sendy", "newsletter", "wrapper", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmad Awais",
+            "email": "me@ahmadawais.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+            "php": ">=5.3.0"
+    },
+}
