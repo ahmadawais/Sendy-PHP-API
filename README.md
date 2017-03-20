@@ -27,7 +27,7 @@ Getting started is easy. Here's how you do it. You can check the example.php fil
 Obviously, you'll have to download the wrapper to your current setup. Several ways to do that.
 
 - Download the library [class-sendy-php-api.php](https://github.com/ahmadawais/Sendy-PHP-API/blob/master/src/class-sendy-php-api.php)
-`curl https://git.io/vyFbs`
+`curl -O https://git.io/vyFbs`
 
 - Composer Install
 `composer require ahmadawais/sendy-php-api`
