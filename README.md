@@ -2,19 +2,19 @@
 🚀 Sendy PHP API Wrapper: Complete API interfacing.
 
 ## API Wrapper For Sendy API
-With this Sendy PHP API Wrapper you can do the following:
+With this `Sendy PHP API Wrapper` you can do the following:
 
 **SUBSCRIBERS**
-- Subscribe
-- Unsubscribe
-- Delete subscriber
-- Subscription status
+- Subscribe.
+- Unsubscribe.
+- Delete subscriber.
+- Subscription status.
 
 **LISTS**
-- Active subscriber count
+- Active subscriber count.
 
 **CAMPAIGNS**
-- Create
+- Create.
 
 ## Get Started!
 Getting started is easy. Here's how you do it. You can check the example.php file as well.
