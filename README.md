@@ -1,3 +1,7 @@
+![Sendy PHP API Wrapper](https://i.imgur.com/FylVZzy.png)
+
+---
+
 # Sendy PHP API Wrapper
 🚀 Sendy PHP API Wrapper: Complete API interfacing.
 
