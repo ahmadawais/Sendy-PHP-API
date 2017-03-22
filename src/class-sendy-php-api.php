@@ -109,7 +109,7 @@ if ( ! class_exists( 'Sendy_PHP_API' ) ) {
 				case '1':
 					return array(
 						'status'  => true,
-						'message' => 'Subscribed',
+						'message' => 'Subscribed!',
 						 );
 					break;
 
