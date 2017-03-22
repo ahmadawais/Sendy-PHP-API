@@ -16,6 +16,11 @@ if ( ! defined( 'Sendy_PHP_API_Wrapper' ) ) {
 	exit;
 }
 
+// Helps with the CORS issues.
+header( 'Access-Control-Allow-Origin: *' );
+header( 'Access-Control-Allow-Methods: POST, GET' );
+header( 'Access-Control-Allow-Credentials: true' );
+
 // Make sure class is unique.
 if ( ! class_exists( 'Sendy_PHP_API' ) ) {
 	/**
