@@ -4,7 +4,7 @@
  *
  * Sendy's API is not RESTful so having this wrapper is great.
  *
- * @version 1.0.0
+ * @version 1.0.1
  */
 
 // Namespace FTW.
