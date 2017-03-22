@@ -7,6 +7,9 @@
  * @since 	1.0.0
  */
 
+// 0. Define SENDY_API.
+define( 'Sendy_PHP_API_Wrapper', TRUE );
+
 // 1. Require the wrapper.
 require_once( 'class-sendy-php-api.php' );
 

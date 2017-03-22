@@ -10,6 +10,12 @@
 // Namespace FTW.
 namespace SENDY;
 
+// Exit if accessed directly.
+if ( ! defined( 'Sendy_PHP_API_Wrapper' ) ) {
+	echo '<h1>Nothing to see here!</h1>';
+	exit;
+}
+
 // Make sure class is unique.
 if ( ! class_exists( 'Sendy_PHP_API' ) ) {
 	/**
@@ -76,8 +82,6 @@ if ( ! class_exists( 'Sendy_PHP_API' ) ) {
 
 			// Set the ID.
 			$this->list_id = $list_id;
-
-			return true;
 		}
 
 		/**
@@ -226,7 +230,7 @@ if ( ! class_exists( 'Sendy_PHP_API' ) ) {
 
 			// Handle the results.
 			switch ( $result ) {
-				case 'Subscribed':
+				case 'Subscribed!':
 				case 'Unsubscribed':
 				case 'Unconfirmed':
 				case 'Bounced':

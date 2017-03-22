@@ -32,6 +32,12 @@ Obviously, you'll have to download the wrapper to your current setup. Several wa
 - Composer Install
 `composer require ahmadawais/sendy-php-api`
 
+#### Step 0. Define SENDY_API.
+```php
+// Define the global var to avoid direct access to the library class.
+define( 'Sendy_PHP_API_Wrapper', TRUE );
+```
+
 #### Step 1. Require the wrapper.
 ```php
 require_once( 'class-sendy-php-api.php' );
