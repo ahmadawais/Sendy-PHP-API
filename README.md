@@ -149,8 +149,10 @@ The response of this PHP wrapper is custom built. At the moment, it always retur
 - Basic methods for all API routes.
 
 ## License & Credits
+
 The code is licensed under MIT and a huge props to Jacob Bennett for his initial work on the lib.
 Requires at least PHP 5.3.0 (otherwise remove the namespace).
+
 ---
 ### 🙌 [WPCOUPLE PARTNERS](https://WPCouple.com/partners):
 This open source project is maintained by the help of awesome businesses listed below. What? [Read more about it →](https://WPCouple.com/partners)
