@@ -236,6 +236,7 @@ if ( ! class_exists( 'Sendy_PHP_API' ) ) {
 			// Handle the results.
 			switch ( $result ) {
 				case 'Subscribed!':
+				case 'Subscribed':
 				case 'Unsubscribed':
 				case 'Unconfirmed':
 				case 'Bounced':
