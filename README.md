@@ -6,10 +6,7 @@
   Sendy PHP API Wrapper
 </h1>
 
-
----
-
-🚀 Sendy PHP API Wrapper: Complete API interfacing.
+<div align="center">🚀 Sendy PHP API Wrapper: Complete API interfacing.</div>
 
 ## API Wrapper For Sendy API
 With this `Sendy PHP API Wrapper` you can do the following:
