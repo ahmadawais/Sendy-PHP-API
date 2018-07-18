@@ -41,11 +41,13 @@ composer require ahmadawais/sendy-php-api
 ```
 
 #### Step 0. Require the wrapper
+
 ```php
 require_once( 'Sendy.php' );
 ```
 
 #### Step 1. Configure it
+
 ```php
 // 2. Configuration.
 $config = [
@@ -56,11 +58,19 @@ $config = [
 ```
 
 #### Step 2. Init
+
 ```php
 $sendy = new \SENDY\API( $config );
 ```
 
 ## API KEY METHODS
+
+1. Method: `subscribe()`.
+2. Method: `unsubscribe()`.
+3. Method: `subStatus()`.
+4. Method: `delete()`.
+5. Method: `subCount()`.
+6. Method: `campaign()`.
 
 ### Method #1: Subscribe
 
