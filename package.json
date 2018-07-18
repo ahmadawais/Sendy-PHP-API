@@ -1,6 +1,6 @@
 {
 	"name": "Sendy-PHP-API",
-	"version": "2.1.0",
+	"version": "2.2.0",
 	"description": "SENDY PHP API. NPM is only handling the GitHub Release.",
 	"scripts": {
 		"release": "release-it && composer-version minor"
