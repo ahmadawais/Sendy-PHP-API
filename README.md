@@ -12,17 +12,24 @@
 
 With this `Sendy PHP API Wrapper` you can do the following:
 
-**SUBSCRIBERS**
+### **SUBSCRIBERS**
+
 - Subscribe.
 - Unsubscribe.
 - Delete subscriber.
 - Subscription status.
 
-**LISTS**
-- Active subscriber count.
+### **LISTS**
 
-**CAMPAIGNS**
+- Set List.
+- Get List.
+- Active subscriber count.
+- List Sengments handling.
+
+### **CAMPAIGNS**
+
 - Create.
+- Draft.
 
 ## Getting Started!
 
