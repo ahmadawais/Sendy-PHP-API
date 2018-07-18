@@ -8,7 +8,7 @@
 
 </div>
 
-## SENDY API
+## 📨 SENDY API
 
 With this `Sendy PHP API Wrapper` you can do the following:
 
@@ -20,13 +20,9 @@ Delete subscriber | Active subscriber count | Send
 Subscription status | List Segments handling | Assign to brands
 
 
-## Getting Started!
+## Getting Started
 
-Getting started is easy. Here's how you do it. You can check the example.php file as well.
-
-## Download ⚡️
-
-Obviously, you'll have to download the wrapper to your current setup. Several ways to do that.
+Getting started is easy. Here's how you do it. You can check the example.php file as well. Obviously, you'll have to download the wrapper to your current setup. Several ways to do that.
 
 ### **#1** MANUAL INSTALL:
 
