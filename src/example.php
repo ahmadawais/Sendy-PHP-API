@@ -19,7 +19,7 @@ require_once './Sendy.php';
 
 // 2. Configuration.
 $config = [
-	'sendyUrl' => 'https://send_installation_url.com',  // Your Sendy installation URL (without trailing slash).
+	'sendyUrl' => 'https://send_installation_url.com', // Your Sendy installation URL (without trailing slash).
 	'apiKey'   => 'XXXXXXXXXXXXXXXX', // Your API key. Available in Sendy Settings.
 	'listId'   => 'XXXXXXXXXXXXXXXX',
 ];
@@ -96,8 +96,8 @@ header( 'Access-Control-Allow-Credentials: true' );
 // Get JSON printed for you.
 print_r( json_encode( $responseArray ) );
 
-// Method #7: Change the `listId` you are referring to at any point.
+// Method #7: Change the list ID `XXXXXXX` you are referring to at any point.
 $sendy->setListId( 'XXXXXXX' );
 
-// Method #8: Get the `listId` you are referring to at any point.
-$sendy->getListId( 'XXXXXXX' );
+// Method #8: Get the list id you are referring to at any point.
+$sendy->getListId();
