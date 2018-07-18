@@ -2,7 +2,7 @@
 
 <img align="center" src="https://i.imgur.com/FylVZzy.png" />
 
-🚀 Sendy PHP API Wrapper: Complete API interfacing.
+<p>🚀 Sendy PHP API Wrapper: Complete API interfacing.</p>
 
 [![emoji-log](https://cdn.rawgit.com/ahmadawais/stuff/ca97874/emoji-log/flat-round.svg)](https://github.com/ahmadawais/Emoji-Log/)
 
