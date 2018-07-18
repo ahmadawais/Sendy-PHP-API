@@ -2,7 +2,7 @@
 	"name": "ahmadawais/sendy-php-api",
 	"description": "Sendy PHP API Wrapper: Complete API interfacing.",
 	"type": "library",
-	"version": "2.1.0",
+	"version": "2.2.0",
 	"keywords": [
 		"sendy",
 		"newsletter",
