@@ -35,6 +35,12 @@ Thumbs.db
 **/.sass-cache/*
 **/.map
 
+
+# Ignore coverage report #
+##########
+
+tests/coverage/*
+
 # Composer #
 ##########
 vendors/
@@ -42,6 +48,8 @@ vendors/composer/
 !assets/js/vendor/
 wpcs/
 composer.lock
+/composer.lock
+/vendor
 
 # Bower #
 ##########
