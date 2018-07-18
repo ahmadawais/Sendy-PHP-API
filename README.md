@@ -1,8 +1,4 @@
-<h1 align="center">
-  <img src="https://i.imgur.com/FylVZzy.png" />
-
-  Sendy PHP API Wrapper
-</h1>
+<img align="center" src="https://i.imgur.com/FylVZzy.png" />
 
 <div align="center">
 
