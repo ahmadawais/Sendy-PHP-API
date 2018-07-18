@@ -11,9 +11,6 @@
 
 namespace SENDY;
 
-// Autoloader.
-require_once dirname( __FILE__ ) . '/../vendor/autoload.php';
-
 use Requests;
 
 
@@ -361,24 +358,26 @@ class API {
 		// URL to send POST to.
 		$postUrl = $this->sendyUrl . '/' . $route;
 
-		$request = Requests::post( $postUrl, [], $postData );
+		if ( class_exists( 'Requests' ) ) {
+			// Send POST.
+			$request     = Requests::post( $postUrl, [], $postData );
+			$apiResponse = $request->body;
+		} else {
+			// Let's cURL.
+			// phpcs:disable -- not WP.
+			$ch = curl_init( $postUrl );
+			// Settings to disable SSL verification for testing.
+			// curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, 0 );
+			// curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, 0 );
+			curl_setopt( $ch, CURLOPT_HTTPHEADER, array( 'Content-Type: application/x-www-form-urlencoded' ) );
+			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
+			curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1 );
+			curl_setopt( $ch, CURLOPT_POST, 1 );
+			curl_setopt( $ch, CURLOPT_POSTFIELDS, $postData );
+			$apiResponse = curl_exec( $ch );
+			curl_close( $ch );
+		}
 
-		$apiResponse = $request->body;
-
-		// $this->it( $request->body );
-		// var_dump($response->body);
-		// // Let's CURL ;).
-		// $ch = curl_init( $this->sendyUrl . '/' . $route );
-		// // Settings to disable SSL verification for testing ( leave commented for production use )
-		// // curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, 0 );
-		// // curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, 0 );
-		// curl_setopt( $ch, CURLOPT_HTTPHEADER, array( 'Content-Type: application/x-www-form-urlencoded' ) );
-		// curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
-		// curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1 );
-		// curl_setopt( $ch, CURLOPT_POST, 1 );
-		// curl_setopt( $ch, CURLOPT_POSTFIELDS, $postData );
-		// $apiResponse = curl_exec( $ch );
-		// curl_close( $ch );
 		// API apiResponse.
 		return $apiResponse;
 	}
