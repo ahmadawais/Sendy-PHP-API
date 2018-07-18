@@ -1,6 +1,6 @@
-<img align="center" src="https://i.imgur.com/FylVZzy.png" />
-
 <div align="center">
+
+<img align="center" src="https://i.imgur.com/FylVZzy.png" />
 
 🚀 Sendy PHP API Wrapper: Complete API interfacing.
 
