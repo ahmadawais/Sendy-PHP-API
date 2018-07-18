@@ -1,0 +1,22 @@
+{
+	"name": "Sendy-PHP-API",
+	"version": "1.0.0",
+	"description": "SENDY PHP API. NPM is only handling the GitHub Release.",
+	"scripts": {
+		"release": "release-it"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ahmadawais/Sendy-PHP-API.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ahmadawais/Sendy-PHP-API/issues"
+	},
+	"homepage": "https://github.com/ahmadawais/Sendy-PHP-API#readme",
+	"devDependencies": {
+		"release-it": "^7.4.7"
+	}
+}

@@ -1,14 +1,11 @@
-
-
 <h1 align="center">
   <img src="https://i.imgur.com/FylVZzy.png" />
-  
+
   Sendy PHP API Wrapper
 </h1>
 
 <div align="center">🚀 Sendy PHP API Wrapper: Complete API interfacing.</div>
 
-## API Wrapper For Sendy API
 With this `Sendy PHP API Wrapper` you can do the following:
 
 **SUBSCRIBERS**
@@ -33,7 +30,10 @@ Obviously, you'll have to download the wrapper to your current setup. Several wa
 `curl -O https://git.io/vyFbs`
 
 - Composer Install
-`composer require ahmadawais/sendy-php-api`
+
+```php
+composer require ahmadawais/sendy-php-api
+```
 
 #### Step 0. Define SENDY_API.
 ```php
@@ -43,13 +43,13 @@ define( 'Sendy_PHP_API_Wrapper', TRUE );
 
 #### Step 1. Require the wrapper.
 ```php
-require_once( 'class-sendy-php-api.php' );
+require_once( 'Sendy.php' );
 ```
 
 #### Step 2. Configure it.
 ```php
 $config = array(
-    'installation_url' => 'http://send.yourdomain.com',  // Your Sendy installation URL (without trailing slash).
+    'installation_url' => 'https://send.yourdomain.com',  // Your Sendy installation URL (without trailing slash).
     'api_key'          => 'XXXXXXXXXXXXXXXXXXXXXXXXXX', // Your API key. Aavailable in Sendy Settings.
     'list_id'          => 'XXXXXXXXXXXXXXXXXXXXXXXXXX',
 );
@@ -125,7 +125,7 @@ $sendy->get_list_id( "XXXXXXX" );
 ```
 
 ## Response
-The response of this PHP wrapper is custom built. At the moment, it always returns a PHP Array. This array has the `status` of your action and an appropriate `message` in the response. 
+The response of this PHP wrapper is custom built. At the moment, it always returns a PHP Array. This array has the `status` of your action and an appropriate `message` in the response.
 
 - `status` is either `true` or `false`.
 - `message` is based on the type of action being performed
@@ -136,7 +136,7 @@ The response of this PHP wrapper is custom built. At the moment, it always retur
         'status'  => true,
         'message' => 'Already Subscribed'
     )
-    
+
     // E.g. FAIL response.
     array(
         'status'  => false,

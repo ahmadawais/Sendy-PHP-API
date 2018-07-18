@@ -1,0 +1,11 @@
+{
+	"saveAndRun": {
+		"commands": [
+			{
+				"match": "\\.php$",
+				"cmd": "phpcbf --standard='./phpcs.xml' ${file}",
+				"silent": true
+			}
+		]
+	}
+}
