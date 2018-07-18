@@ -3,7 +3,7 @@
 	"version": "2.2.0",
 	"description": "SENDY PHP API. NPM is only handling the GitHub Release.",
 	"scripts": {
-		"release": "release-it && composer-version minor"
+		"release": "release-it"
 	},
 	"repository": {
 		"type": "git",
@@ -17,7 +17,6 @@
 	},
 	"homepage": "https://github.com/ahmadawais/Sendy-PHP-API#readme",
 	"devDependencies": {
-		"composer-version": "^0.2.0",
 		"release-it": "^7.4.7"
 	}
 }

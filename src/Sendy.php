@@ -4,7 +4,7 @@
  *
  * Sendy's API is not RESTful so having this wrapper is great.
  *
- * @version 2.0.0
+ * @version 2.3.0
  * @package Sendy
  * @since 1.0.0
  */
