@@ -4,11 +4,17 @@
   Sendy PHP API Wrapper
 </h1>
 
-<div align="center">🚀 Sendy PHP API Wrapper: Complete API interfacing.</div>
+<div align="center">
+
+🚀 Sendy PHP API Wrapper: Complete API interfacing.
+
+[![emoji-log](https://cdn.rawgit.com/ahmadawais/stuff/ca97874/emoji-log/flat-round.svg)](https://github.com/ahmadawais/Emoji-Log/)
+
+</div>
 
 ## SENDY API
 
-With this `Sendy PHP API Wrapper` you can do the following: [![emoji-log](https://cdn.rawgit.com/ahmadawais/stuff/ca97874/emoji-log/flat-round.svg)](https://github.com/ahmadawais/Emoji-Log/)
+With this `Sendy PHP API Wrapper` you can do the following:
 
 **SUBSCRIBERS**
 - Subscribe.
