@@ -12,7 +12,7 @@
 namespace SENDY;
 
 use Requests;
-
+use Exception;
 
 // Helps with the CORS issues.
 header( 'Access-Control-Allow-Origin: *' );
