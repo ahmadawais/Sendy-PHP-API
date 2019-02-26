@@ -17,6 +17,6 @@
 	},
 	"homepage": "https://github.com/ahmadawais/Sendy-PHP-API#readme",
 	"devDependencies": {
-		"release-it": "^7.4.7"
+		"release-it": "^10.2.0"
 	}
 }
