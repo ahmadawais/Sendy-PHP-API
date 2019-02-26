@@ -84,7 +84,7 @@ class API {
 
 		// Bail if empty.
 		if ( empty( $this->sendyUrl ) || empty( $this->apiKey ) || empty( $this->listId ) ) {
-			throw new Exception( 'Required config parameters [sendyUrl, listId, apiKey] is not set or empty', 1 );
+			throw new \Exception( 'Required config parameters [sendyUrl, listId, apiKey] is not set or empty', 1 );
 		}
 	}
 
@@ -98,7 +98,7 @@ class API {
 	public function setListId( $listId ) {
 		// Bail if empty.
 		if ( empty( $listId ) ) {
-			throw new Exception( 'Required config parameter [listId] is not set', 1 );
+			throw new \Exception( 'Required config parameter [listId] is not set', 1 );
 		}
 
 		// Set the ID.
@@ -273,7 +273,7 @@ class API {
 
 		// Handle exceptions.
 		if ( empty( $list ) ) {
-			throw new Exception( "Method [subCount] requires parameter [list] or [$this->listId] to be set.", 1 );
+			throw new \Exception( "Method [subCount] requires parameter [list] or [$this->listId] to be set.", 1 );
 		}
 
 		// Send request for subCount.
@@ -340,7 +340,7 @@ class API {
 	private function query( $route, array $values ) {
 		// Bail if empty.
 		if ( empty( $route ) || empty( $values ) ) {
-			throw new Exception( 'Required config parameter [route, values] is not set or empty', 1 );
+			throw new \Exception( 'Required config parameter [route, values] is not set or empty', 1 );
 		}
 
 		// Global options for return.
