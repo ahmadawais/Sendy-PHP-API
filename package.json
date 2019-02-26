@@ -1,6 +1,6 @@
 {
 	"name": "sendy",
-	"version": "2.3.0",
+	"version": "2.4.0",
 	"description": "SENDY PHP API. NPM is only handling the GitHub Release.",
 	"scripts": {
 		"release": "release-it"
