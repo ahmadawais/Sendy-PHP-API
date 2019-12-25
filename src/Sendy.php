@@ -143,7 +143,6 @@ class API {
 		$route = 'subscribe';
 
 		// Send the subscribe command.
-		$values = array_merge( $values, array('api_key' => $this->apiKey) ); //add api key
 		$apiResponse = strval( $this->query( $route, $values ) );
 
 		// Handle API Responses.
@@ -172,7 +171,7 @@ class API {
 		$route = 'unsubscribe';
 
 		// Send the unsubscribe.
-		$apiResponse = strval( $this->query( $route, [ 'email' => $email, 'api_key' => $this->apiKey ] ) ); //add api key
+		$apiResponse = strval( $this->query( $route, [ 'email' => $email ] ) );
 
 		// Handle API Responses.
 		switch ( $apiResponse ) {
@@ -200,7 +199,6 @@ class API {
 		$apiResponse = $this->query(
 			$route, [
 				'email'   => $email,
-				'api_key' => $this->apiKey,
 				'list_id' => $this->listId,
 			]
 		);
@@ -237,7 +235,6 @@ class API {
 			$this->query(
 				$route, [
 					'email'   => $email,
-					'api_key' => $this->apiKey,
 					'list_id' => $this->listId,
 				]
 			)
@@ -280,7 +277,6 @@ class API {
 		// Send request for subCount.
 		$apiResponse = $this->query(
 			$route, [
-				'api_key' => $this->apiKey,
 				'list_id' => $list,
 			]
 		);
@@ -304,14 +300,6 @@ class API {
 	public function campaign( array $values ) {
 		// Route.
 		$route = 'api/campaigns/create.php';
-
-		// Global options.
-		$defualtOptions = [
-			'api_key' => $this->apiKey,
-		];
-
-		// Merge the passed in values with the global options.
-		$values = array_merge( $defualtOptions, $values );
 
 		// Send request for campaign.
 		$apiResponse = $this->query( $route, $values );
@@ -348,6 +336,7 @@ class API {
 		$returnOptions = array(
 			'list'    => $this->listId,
 			'boolean' => 'true',
+            'api_key' => $this->apiKey //api_key for all calls
 		);
 
 		// Merge the passed in values with the options for return.
