@@ -275,11 +275,7 @@ class API {
 		}
 
 		// Send request for subCount.
-		$apiResponse = $this->query(
-			$route, [
-				'list_id' => $list,
-			]
-		);
+		$apiResponse = $this->query( $route, [ 'list_id' => $list ] );
 
 		// Handle the API Responses.
 		if ( is_numeric( $apiResponse ) ) {
