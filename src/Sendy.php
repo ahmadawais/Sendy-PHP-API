@@ -143,6 +143,7 @@ class API {
 		$route = 'subscribe';
 
 		// Send the subscribe command.
+        $values = array_merge( $values, array('api_key' => $this->apiKey) ); //add api key
 		$apiResponse = strval( $this->query( $route, $values ) );
 
 		// Handle API Responses.
@@ -171,7 +172,7 @@ class API {
 		$route = 'unsubscribe';
 
 		// Send the unsubscribe.
-		$apiResponse = strval( $this->query( $route, [ 'email' => $email ] ) );
+		$apiResponse = strval( $this->query( $route, [ 'email' => $email, 'api_key' => $this->apiKey ] ) ); //add api key
 
 		// Handle API Responses.
 		switch ( $apiResponse ) {
