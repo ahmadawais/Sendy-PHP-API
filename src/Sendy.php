@@ -336,7 +336,7 @@ class API {
 		$returnOptions = array(
 			'list'    => $this->listId,
 			'boolean' => 'true',
-            'api_key' => $this->apiKey //api_key for all calls
+			'api_key' => $this->apiKey //api_key for all calls
 		);
 
 		// Merge the passed in values with the options for return.
