@@ -143,7 +143,7 @@ class API {
 		$route = 'subscribe';
 
 		// Send the subscribe command.
-        $values = array_merge( $values, array('api_key' => $this->apiKey) ); //add api key
+		$values = array_merge( $values, array('api_key' => $this->apiKey) ); //add api key
 		$apiResponse = strval( $this->query( $route, $values ) );
 
 		// Handle API Responses.
