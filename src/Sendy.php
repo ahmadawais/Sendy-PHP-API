@@ -357,9 +357,9 @@ class API {
 			// Let's cURL.
 			// phpcs:disable -- not WP.
 			$ch = curl_init( $postUrl );
-			// Comment disable this SSL verification for testing.
+			// Comment to disable this SSL peer verification for testing.
 			curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, 0 );
-			// Comment disable this SSL verification for testing.
+			// Comment to disable this SSL host verification for testing.
 			curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, 0 );
 			curl_setopt( $ch, CURLOPT_HTTPHEADER, array( 'Content-Type: application/x-www-form-urlencoded' ) );
 			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
