@@ -4,7 +4,7 @@
  *
  * Sendy's API is not RESTful so having this wrapper is great.
  *
- * @version 2.3.0
+ * @version 4.0.0
  * @package Sendy
  * @since 1.0.0
  */
@@ -46,6 +46,7 @@ class API {
 		echo $output;
 		ob_end_flush();
 	}
+
 	/**
 	 * Installation URL.
 	 *
@@ -74,7 +75,7 @@ class API {
 	 * Constructor.
 	 *
 	 * @param Array $config Configuration.
-	 * @throws Exception PHP Exceptions.
+	 * @throws \Exception Without config params.
 	 * @since  1.0.0
 	 */
 	public function __construct( array $config ) {
@@ -92,7 +93,7 @@ class API {
 	 * Set List ID.
 	 *
 	 * @param String $listId List ID.
-	 * @throws Exception PHP Exceptions.
+	 * @throws \Exception On missing List ID.
 	 * @since  1.0.0
 	 */
 	public function setListId( $listId ) {
@@ -199,7 +200,6 @@ class API {
 		$apiResponse = $this->query(
 			$route, [
 				'email'   => $email,
-				'api_key' => $this->apiKey,
 				'list_id' => $this->listId,
 			]
 		);
@@ -236,7 +236,6 @@ class API {
 			$this->query(
 				$route, [
 					'email'   => $email,
-					'api_key' => $this->apiKey,
 					'list_id' => $this->listId,
 				]
 			)
@@ -279,7 +278,6 @@ class API {
 		// Send request for subCount.
 		$apiResponse = $this->query(
 			$route, [
-				'api_key' => $this->apiKey,
 				'list_id' => $list,
 			]
 		);
@@ -304,14 +302,6 @@ class API {
 		// Route.
 		$route = 'api/campaigns/create.php';
 
-		// Global options.
-		$defualtOptions = [
-			'api_key' => $this->apiKey,
-		];
-
-		// Merge the passed in values with the global options.
-		$values = array_merge( $defualtOptions, $values );
-
 		// Send request for campaign.
 		$apiResponse = $this->query( $route, $values );
 
@@ -331,9 +321,9 @@ class API {
 	 *
 	 * Build and Send the query via CURL.
 	 *
-	 * @throws Exception PHP Exceptions.
 	 * @param  String $route API Route.
 	 * @param  Array  $values Parameters.
+	 * @throws \Exception On missing params.
 	 * @return String
 	 * @since  1.0.0
 	 */
@@ -345,11 +335,12 @@ class API {
 
 		// Global options for return.
 		$returnOptions = array(
+			'api_key' => $this->apiKey,
 			'list'    => $this->listId,
 			'boolean' => 'true',
 		);
 
-		// Merge the passed in values with the options for return.
+		// Merge $values with the global options $returnOptions (overwrites default $values).
 		$content = array_merge( $values, $returnOptions );
 
 		// Build a query using the $content.
@@ -366,9 +357,10 @@ class API {
 			// Let's cURL.
 			// phpcs:disable -- not WP.
 			$ch = curl_init( $postUrl );
-			// Settings to disable SSL verification for testing.
-			// curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, 0 );
-			// curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, 0 );
+			// Comment disable this SSL verification for testing.
+			curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, 0 );
+			// Comment disable this SSL verification for testing.
+			curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, 0 );
 			curl_setopt( $ch, CURLOPT_HTTPHEADER, array( 'Content-Type: application/x-www-form-urlencoded' ) );
 			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
 			curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1 );
