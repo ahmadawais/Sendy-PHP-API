@@ -1,0 +1,17 @@
+{
+	"name": "send-php-api",
+	"version": "4.0.0",
+	"description": "Sendy PHP API Wrapper: Complete API interfacing",
+	"license": "MIT",
+	"repository": "ahmadawais/Sendy-PHP-API",
+	"author": {
+		"name": "Ahmad Awais",
+		"email": "me@AhmadAwais.com",
+		"url": "https://twitter.com/MrAhmadAwais"
+	},
+	"keywords": [
+		"Sendy-PHP-API",
+		"Ahmad Awais",
+		"ahmadawais"
+	]
+}
