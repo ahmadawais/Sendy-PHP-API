@@ -1,22 +1,17 @@
 {
-	"name": "sendy",
-	"version": "2.4.0",
-	"description": "SENDY PHP API. NPM is only handling the GitHub Release.",
-	"scripts": {
-		"release": "release-it"
+	"name": "send-php-api",
+	"version": "4.0.0",
+	"description": "Sendy PHP API Wrapper: Complete API interfacing",
+	"license": "MIT",
+	"repository": "ahmadawais/Sendy-PHP-API",
+	"author": {
+		"name": "Ahmad Awais",
+		"email": "me@AhmadAwais.com",
+		"url": "https://twitter.com/MrAhmadAwais"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ahmadawais/Sendy-PHP-API.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/ahmadawais/Sendy-PHP-API/issues"
-	},
-	"homepage": "https://github.com/ahmadawais/Sendy-PHP-API#readme",
-	"devDependencies": {
-		"release-it": "^10.2.0"
-	}
+	"keywords": [
+		"Sendy-PHP-API",
+		"Ahmad Awais",
+		"ahmadawais"
+	]
 }
