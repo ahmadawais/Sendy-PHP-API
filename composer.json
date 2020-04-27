@@ -2,7 +2,12 @@
 	"name": "ahmadawais/sendy-php-api",
 	"description": "Sendy PHP API Wrapper: Complete API interfacing.",
 	"type": "library",
-	"keywords": ["sendy", "newsletter", "wrapper", "api"],
+	"keywords": [
+		"sendy",
+		"newsletter",
+		"wrapper",
+		"api"
+	],
 	"license": "MIT",
 	"authors": [
 		{
@@ -19,7 +24,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"AhmadAwais\\Sendy": "src/"
+			"AhmadAwais\\Sendy\\": "src/"
 		}
 	}
 }
