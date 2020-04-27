@@ -86,7 +86,6 @@ $responseArray = $sendy->subscribe(
 		'gdpr'      => true, // GDPR compliant? Set this to "true" (optional).
 	]
 );
-
 ```
 
 ### Method #2: Unsubscribe
