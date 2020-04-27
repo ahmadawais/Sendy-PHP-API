@@ -15,7 +15,7 @@
  */
 
 // 1. Require the wrapper. | Better yet use composer and autoloader.
-require_once './Sendy.php';
+require_once './API.php';
 
 // 2. Configuration.
 $config = [
