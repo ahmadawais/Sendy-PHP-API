@@ -56,6 +56,7 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 ![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
 
+> 🐛 Release data. [`fa2fa48`](https://github.com/ahmadawais/Sendy-PHP-API/commit/fa2fa48cf4e57b74fa21db686c9cb654d614193f) <br>
 > 🐛 Release data. [`ead53ce`](https://github.com/ahmadawais/Sendy-PHP-API/commit/ead53ceaa9a6dbf1e0c0d23ab694342fd2f9e7cb) <br>
 
 ![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
@@ -63,6 +64,7 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 >  📖 Changelog [`2be5dae`](https://github.com/ahmadawais/Sendy-PHP-API/commit/2be5dae81e1eaef624b41bc6b477ea5abc7f8ae5) <br>
 >  📖 Updates [`e2e9de4`](https://github.com/ahmadawais/Sendy-PHP-API/commit/e2e9de4c15c00459fb33a6bd82bf4410ff62f5ee) <br>
 > 📖 Sponsor [`8f19560`](https://github.com/ahmadawais/Sendy-PHP-API/commit/8f195601aabd9011e782b43ca37746e83f2bfc40) <br>
+> 📖 Changelog [`7371ba7`](https://github.com/ahmadawais/Sendy-PHP-API/commit/7371ba7ab587056f8bf13f9b46fa4afdf2cc922e) <br>
 > 📖 Improved lingo [`60e6f5e`](https://github.com/ahmadawais/Sendy-PHP-API/commit/60e6f5edb05eecf08bd07681bb5c91477f5a345d) <br>
 >  📖 Changelog [`b45ba23`](https://github.com/ahmadawais/Sendy-PHP-API/commit/b45ba230738216837fefc1a279038538c11946a8) <br>
 
