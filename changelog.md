@@ -32,11 +32,27 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 <br>
 
-### RELEASE: [v5.3.0](https://github.com/ahmadawais/Sendy-PHP-API/compare/5.2.0...v5.3.0)
+### RELEASE: [v5.4.0](https://github.com/ahmadawais/Sendy-PHP-API/compare/5.3.0...v5.4.0)
+
+![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
+
+> 🐛 5.4 [`4458dc8`](https://github.com/ahmadawais/Sendy-PHP-API/commit/4458dc8c3119e61c182b0899e674d9874d04118d) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
+### RELEASE: [5.3.0](https://github.com/ahmadawais/Sendy-PHP-API/compare/5.2.0...5.3.0)
 
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
 
 > 📦 5.3 [`f9545cd`](https://github.com/ahmadawais/Sendy-PHP-API/commit/f9545cda47f20016d104ddd5f909f8dfdd24e89a) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog [`d91c69b`](https://github.com/ahmadawais/Sendy-PHP-API/commit/d91c69bed823a22f81b05894ee3a47e5e43fb2dc) <br>
 
 <br>
 

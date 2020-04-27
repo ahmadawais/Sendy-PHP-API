@@ -1,6 +1,6 @@
 {
 	"name": "send-php-api",
-	"version": "5.3.0",
+	"version": "5.4.0",
 	"description": "Sendy PHP API Wrapper: Complete API interfacing",
 	"license": "MIT",
 	"repository": "ahmadawais/Sendy-PHP-API",
