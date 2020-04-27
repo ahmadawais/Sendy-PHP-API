@@ -32,11 +32,27 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 <br>
 
-### RELEASE: [v5.4.0](https://github.com/ahmadawais/Sendy-PHP-API/compare/5.3.0...v5.4.0)
+### RELEASE: [v6.0.0](https://github.com/ahmadawais/Sendy-PHP-API/compare/5.4.0...v6.0.0)
+
+![BREAKING](https://img.shields.io/badge/-BREAKING%20CHANGES-gray.svg?colorB=F91800)
+
+> ‼️ Namespace + PSR4 Compat Upgrade [`7e9eacb`](https://github.com/ahmadawais/Sendy-PHP-API/commit/7e9eacb3b4a5049a02b976d5c21c6e677eebf33c) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
+### RELEASE: [5.4.0](https://github.com/ahmadawais/Sendy-PHP-API/compare/5.3.0...5.4.0)
 
 ![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
 
 > 🐛 5.4 [`4458dc8`](https://github.com/ahmadawais/Sendy-PHP-API/commit/4458dc8c3119e61c182b0899e674d9874d04118d) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog [`414a75d`](https://github.com/ahmadawais/Sendy-PHP-API/commit/414a75d9dd10514767987e2fb7a699ad08158207) <br>
 
 <br>
 
