@@ -59,7 +59,9 @@ $config = [
 #### Step 2. Init
 
 ```php
-$sendy = new \SENDY\API( $config );
+use AhmadAwais\Sendy\API as Sendy;
+
+$sendy = new Sendy( $config );
 ```
 
 ## API KEY METHODS
