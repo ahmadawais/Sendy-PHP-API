@@ -38,7 +38,11 @@ composer require ahmadawais/sendy-php-api
 #### Step 0. Require the wrapper
 
 ```php
-require_once( 'Sendy.php' );
+// New way using PSR4 Standard autoloader. Recommended
+require_once . '/vendor/autoload.php';
+
+// Old way of requiring all files manually. Not recommended.
+require_once( 'API.php' );
 ```
 
 #### Step 1. Configure it
