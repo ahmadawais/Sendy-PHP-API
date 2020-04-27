@@ -34,6 +34,10 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 ### RELEASE: [v5.0.0](https://github.com/ahmadawais/Sendy-PHP-API/compare/2.4.0...v5.0.0)
 
+![BREAKING](https://img.shields.io/badge/-BREAKING%20CHANGES-gray.svg?colorB=F91800)
+
+> ‼️ PSR4 Compat Class File Name changed to API.php [`2babf74`](https://github.com/ahmadawais/Sendy-PHP-API/commit/2babf747ace00304888b8df41875ed5f2aa32f8f) <br>
+
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
 
 > 📦 Extraneous npm files [`33e5d99`](https://github.com/ahmadawais/Sendy-PHP-API/commit/33e5d9929e42a0efc5534478af90c188e5b92299) <br>
@@ -49,6 +53,10 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 > 👌 CoC [`620baac`](https://github.com/ahmadawais/Sendy-PHP-API/commit/620baac6094173ccb9a02f1e3d3406518bc136da) <br>
 > 👌 Docs [`8d9e2dd`](https://github.com/ahmadawais/Sendy-PHP-API/commit/8d9e2dd3bc0b2e5d9dfd98102707bb7e151ec22f) <br>
 > 👌 Lower-case names [`5e769b8`](https://github.com/ahmadawais/Sendy-PHP-API/commit/5e769b8271141e3c1c653f22dd10d17fa3c0ee0f) <br>
+
+![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
+
+> 🐛 Release data. [`ead53ce`](https://github.com/ahmadawais/Sendy-PHP-API/commit/ead53ceaa9a6dbf1e0c0d23ab694342fd2f9e7cb) <br>
 
 ![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
 
