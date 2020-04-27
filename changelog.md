@@ -32,7 +32,7 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 <br>
 
-### RELEASE: [v5.1.0](https://github.com/ahmadawais/Sendy-PHP-API/compare/5.0.0...v5.1.0)
+### RELEASE: [v5.2.0](https://github.com/ahmadawais/Sendy-PHP-API/compare/5.0.0...v5.2.0)
 
 ![BREAKING](https://img.shields.io/badge/-BREAKING%20CHANGES-gray.svg?colorB=F91800)
 
@@ -41,6 +41,11 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 ![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
 
 > 🐛 Ex [`b3d795a`](https://github.com/ahmadawais/Sendy-PHP-API/commit/b3d795a1fe18c175ecfd81e29c44dc9c2c756037) <br>
+> 🐛 Composer [`ceeb8f9`](https://github.com/ahmadawais/Sendy-PHP-API/commit/ceeb8f91a79b4c9ea13ce690a4de51950f31d718) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog [`16637e7`](https://github.com/ahmadawais/Sendy-PHP-API/commit/16637e74bab9457b6614eadab4b5bcb852e4e6a4) <br>
 
 <br>
 
