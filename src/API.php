@@ -15,9 +15,9 @@ use Requests;
 use Exception;
 
 // Helps with the CORS issues.
-header( 'Access-Control-Allow-Origin: *' );
-header( 'Access-Control-Allow-Methods: POST, GET' );
-header( 'Access-Control-Allow-Credentials: true' );
+//header( 'Access-Control-Allow-Origin: *' );
+//header( 'Access-Control-Allow-Methods: POST, GET' );
+//header( 'Access-Control-Allow-Credentials: true' );
 
 /**
  * API Class.
