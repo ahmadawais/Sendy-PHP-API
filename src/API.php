@@ -17,9 +17,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Exception;
 
 // Helps with the CORS issues.
-header( 'Access-Control-Allow-Origin: *' );
-header( 'Access-Control-Allow-Methods: POST, GET' );
-header( 'Access-Control-Allow-Credentials: true' );
+// These headers cause duplication.
+#header( 'Access-Control-Allow-Origin: *' );
+#header( 'Access-Control-Allow-Methods: POST, GET' );
+#header( 'Access-Control-Allow-Credentials: true' );
 
 /**
  * API Class.
