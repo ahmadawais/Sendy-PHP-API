@@ -11,13 +11,16 @@
 
 namespace AhmadAwais\Sendy;
 
-use Requests;
+// use Requests;
+// Switch to the PSR-4 class naming
+use Symfony\Component\HttpFoundation\Request;
 use Exception;
 
 // Helps with the CORS issues.
-header( 'Access-Control-Allow-Origin: *' );
-header( 'Access-Control-Allow-Methods: POST, GET' );
-header( 'Access-Control-Allow-Credentials: true' );
+// These headers cause duplication.
+#header( 'Access-Control-Allow-Origin: *' );
+#header( 'Access-Control-Allow-Methods: POST, GET' );
+#header( 'Access-Control-Allow-Credentials: true' );
 
 /**
  * API Class.
@@ -349,9 +352,9 @@ class API {
 		// URL to send POST to.
 		$postUrl = $this->sendyUrl . '/' . $route;
 
-		if ( class_exists( 'Requests' ) ) {
+		if ( class_exists( 'Request' ) ) {
 			// Send POST.
-			$request     = Requests::post( $postUrl, [], $postData );
+			$request     = Request::post( $postUrl, [], $postData );
 			$apiResponse = $request->body;
 		} else {
 			// Let's cURL.
