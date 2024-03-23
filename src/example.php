@@ -25,7 +25,7 @@ $config = [
 ];
 
 // 3. Init.
-$sendy = new \SENDY\API( $config );
+$sendy = new \AhmadAwais\Sendy\API( $config );
 
 /**
  * API KEY METHODS.

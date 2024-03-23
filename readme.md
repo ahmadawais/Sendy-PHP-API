@@ -25,7 +25,7 @@ Getting started is easy. Here's how you do it. You can check the example.php fil
 
 ### **#1** MANUAL INSTALL:
 
-Git clone this repo and include `./src/Sendy.php` in your project.
+Git clone this repo and include `./src/API.php` in your project.
 
 ### **#2** COMPOSER INSTALL:
 

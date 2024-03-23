@@ -4,7 +4,7 @@
  *
  * Sendy's API is not RESTful so having this wrapper is great.
  *
- * @version 6.0.0
+ * @version 6.0.1
  * @package Sendy
  * @since 1.0.0
  */
@@ -33,8 +33,8 @@ class API
      *
      * Log the response to console for better readability.
      *
-     * @param Mixed  $data Any data.
-     * @param String $context Context.
+     * @param mixed  $data Any data.
+     * @param string $context Context.
      * @since 1.0.0
      */
     public static function it($data, $context = 'LOGGED: ')
@@ -51,7 +51,7 @@ class API
     /**
      * Installation URL.
      *
-     * @var String
+     * @var string
      * @since 1.0.0
      */
     protected $sendyUrl;
@@ -59,7 +59,7 @@ class API
     /**
      * API key.
      *
-     * @var String
+     * @var string
      * @since 1.0.0
      */
     protected $apiKey;
@@ -67,7 +67,7 @@ class API
     /**
      * List ID.
      *
-     * @var String
+     * @var string
      * @since 1.0.0
      */
     protected $listId;
@@ -75,8 +75,8 @@ class API
     /**
      * Constructor.
      *
-     * @param Array $config Configuration.
-     * @throws \Exception Without config params.
+     * @param array $config Configuration.
+     * @throws Exception Without config params.
      * @since  1.0.0
      */
     public function __construct(array $config)
@@ -87,22 +87,22 @@ class API
 
         // Bail if empty.
         if (empty($this->sendyUrl) || empty($this->apiKey) || empty($this->listId)) {
-            throw new \Exception('Required config parameters [sendyUrl, listId, apiKey] is not set or empty', 1);
+            throw new Exception('Required config parameters [sendyUrl, listId, apiKey] is not set or empty', 1);
         }
     }
 
     /**
      * Set List ID.
      *
-     * @param String $listId List ID.
-     * @throws \Exception On missing List ID.
+     * @param string $listId List ID.
+     * @throws Exception On missing List ID.
      * @since  1.0.0
      */
     public function setListId($listId)
     {
         // Bail if empty.
         if (empty($listId)) {
-            throw new \Exception('Required config parameter [listId] is not set', 1);
+            throw new Exception('Required config parameter [listId] is not set', 1);
         }
 
         // Set the ID.
@@ -112,7 +112,7 @@ class API
     /**
      * Get List ID.
      *
-     * @return String
+     * @return string
      * @since  1.0.0
      */
     public function getListId()
@@ -124,9 +124,9 @@ class API
     /**
      * Response from this API.
      *
-     * @param Boolean $status Status.
-     * @param String  $msg Response msg.
-     * @return Array
+     * @param boolean $status Status.
+     * @param string  $msg Response msg.
+     * @return array
      * @since 2.0.0
      */
     private function response($status = false, $msg = 'Something went wrong!')
@@ -140,8 +140,8 @@ class API
     /**
      * Subscribe.
      *
-     * @param  Array $values Values.
-     * @return Array
+     * @param  array $values Values.
+     * @return array
      * @since  1.0.0
      */
     public function subscribe(array $values)
@@ -169,8 +169,8 @@ class API
     /**
      * Unsubscribe.
      *
-     * @param  String $email Email ID.
-     * @return Array
+     * @param  string $email Email ID.
+     * @return array
      * @since  1.0.0
      */
     public function unsubscribe($email)
@@ -195,8 +195,8 @@ class API
     /**
      * Subscriber Status.
      *
-     * @param  String $email Email ID.
-     * @return Array
+     * @param  string $email Email ID.
+     * @return array
      * @since  1.0.0
      */
     public function subStatus($email)
@@ -232,8 +232,8 @@ class API
     /**
      * Delete Subscriber.
      *
-     * @param String $email Email.
-     * @return Array
+     * @param string $email Email.
+     * @return array
      * @since  1.0.0
      */
     public function delete($email)
@@ -268,8 +268,8 @@ class API
      * Subscriber Count.
      *
      * @throws Exception PHP Exceptions.
-     * @param  String $list List ID.
-     * @return Array
+     * @param  string $list List ID.
+     * @return array
      * @since  1.0.0
      */
     public function subCount($list = '')
@@ -284,7 +284,7 @@ class API
 
         // Handle exceptions.
         if (empty($list)) {
-            throw new \Exception("Method [subCount] requires parameter [list] or [$this->listId] to be set.", 1);
+            throw new Exception("Method [subCount] requires parameter [list] or [$this->listId] to be set.", 1);
         }
 
         // Send request for subCount.
@@ -307,8 +307,8 @@ class API
     /**
      * Create a campaign.
      *
-     * @param  Array $values Values.
-     * @return Array
+     * @param  array $values Values.
+     * @return array
      * @since  1.0.0
      */
     public function campaign(array $values)
@@ -335,17 +335,17 @@ class API
      *
      * Build and Send the query via CURL.
      *
-     * @param  String $route API Route.
-     * @param  Array  $values Parameters.
-     * @throws \Exception On missing params.
-     * @return String
+     * @param  string $route API Route.
+     * @param  array  $values Parameters.
+     * @throws Exception On missing params.
+     * @return string
      * @since  1.0.0
      */
     private function query($route, array $values)
     {
         // Bail if empty.
         if (empty($route) || empty($values)) {
-            throw new \Exception('Required config parameter [route, values] is not set or empty', 1);
+            throw new Exception('Required config parameter [route, values] is not set or empty', 1);
         }
 
         // Global options for return.
