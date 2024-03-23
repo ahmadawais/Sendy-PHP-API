@@ -4,9 +4,8 @@
  *
  * Sendy's API is not RESTful so having this wrapper is great.
  *
- * @version 6.0.1
+ * @version 6.0.2
  * @package Sendy
- * @since 1.0.0
  */
 
 namespace AhmadAwais\Sendy;
@@ -24,7 +23,6 @@ header('Access-Control-Allow-Credentials: true');
  *
  * Sendy PHP API Class.
  *
- * @since 1.0.0
  */
 class API
 {
@@ -35,7 +33,7 @@ class API
      *
      * @param mixed  $data Any data.
      * @param string $context Context.
-     * @since 1.0.0
+
      */
     public static function it($data, $context = 'LOGGED: ')
     {
@@ -52,7 +50,7 @@ class API
      * Installation URL.
      *
      * @var string
-     * @since 1.0.0
+
      */
     protected $sendyUrl;
 
@@ -60,7 +58,7 @@ class API
      * API key.
      *
      * @var string
-     * @since 1.0.0
+
      */
     protected $apiKey;
 
@@ -68,7 +66,7 @@ class API
      * List ID.
      *
      * @var string
-     * @since 1.0.0
+
      */
     protected $listId;
 
