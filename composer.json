@@ -16,7 +16,7 @@
 		}
 	],
 	"require": {
-		"rmccue/requests": "^1.7"
+		"guzzlehttp/guzzle": "^7.0"
 	},
 	"config": {
 		"sort-packages": true,
