@@ -3,7 +3,7 @@
 	"version": "6.0.0",
 	"description": "Sendy PHP API Wrapper: Complete API interfacing",
 	"license": "MIT",
-	"repository": "ahmadawais/Sendy-PHP-API",
+	"repository": "cicerbro/Sendy-PHP-API",
 	"author": {
 		"name": "Ahmad Awais",
 		"email": "me@AhmadAwais.com",
